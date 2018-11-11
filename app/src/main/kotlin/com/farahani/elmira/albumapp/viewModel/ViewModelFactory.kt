@@ -2,7 +2,7 @@ package com.farahani.elmira.albumapp.viewModel
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
-import com.farahani.elmira.albumapp.model.AlbumRepository
+import com.farahani.elmira.albumapp.data.db.repository.AlbumRepository
 
 class ViewModelFactory(private val repository: AlbumRepository) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
@@ -12,5 +12,4 @@ class ViewModelFactory(private val repository: AlbumRepository) : ViewModelProvi
 
         throw IllegalArgumentException("Unknown ViewModel Class")
     }
-
 }

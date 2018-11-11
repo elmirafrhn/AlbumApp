@@ -26,6 +26,10 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 ext {
-    roomVersion = '1.0.0'
+    roomVersion = '1.1.0'
     archLifecycleVersion = '1.1.1'
+    retrofitVersion = '2.4.0'
+    retrofitConverterGsonVersion = '2.1.0'
+    retrofitRxjavaAdapterVersion = '2.4.0'
+    retrofitLoggingVersion = '3.9.0'
 }

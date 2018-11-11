@@ -1,9 +1,10 @@
 package com.farahani.elmira.albumapp.viewModel
 
 import android.arch.lifecycle.ViewModel
-import com.farahani.elmira.albumapp.data.db.AlbumsRepository
+import com.farahani.elmira.albumapp.data.db.repository.AlbumRepository
 
-class AlbumsViewModel(repository : AlbumsRepository) : ViewModel() {
+
+class AlbumsViewModel(repository : AlbumRepository) : ViewModel() {
 
 
 }
