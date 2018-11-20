@@ -1,12 +1,10 @@
 package com.farahani.elmira.albumapp
 
-import android.app.Application
+import com.farahani.elmira.albumapp.di.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 
-class App : DaggerApplication(){
-    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
+class App : DaggerApplication() {
+    override fun applicationInjector(): AndroidInjector<out DaggerApplication> =
+        DaggerAppComponent.builder().create(this)
 }
