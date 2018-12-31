@@ -1,11 +1,12 @@
 package com.farahani.elmira.albumapp.data.network.api
 
 import io.reactivex.Single
-import retrofit2.http.GET
+import retrofit2.Retrofit
+import javax.inject.Inject
 
-interface AlbumApi {
+class AlbumApi @Inject constructor(retrofit: Retrofit) : IAlbumApi {
 
-    @GET("/albums")
-    fun getAlbums(): Single<List<AlbumDto>>
+    private val retrofitCreated = retrofit.create(IAlbumApi::class.java)
 
+    override fun getAlbums(): Single<List<AlbumDto>> = retrofitCreated.getAlbums()
 }

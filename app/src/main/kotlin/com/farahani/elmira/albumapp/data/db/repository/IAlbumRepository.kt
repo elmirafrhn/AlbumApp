@@ -5,5 +5,5 @@ import io.reactivex.Single
 
 interface IAlbumRepository {
 
-    fun getAlbums() : Single<List<AlbumData>>
+//    fun getAlbums() : Single<List<AlbumData>>
 }

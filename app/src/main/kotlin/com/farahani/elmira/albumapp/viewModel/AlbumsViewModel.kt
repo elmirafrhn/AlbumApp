@@ -6,5 +6,4 @@ import com.farahani.elmira.albumapp.data.db.repository.AlbumRepository
 
 class AlbumsViewModel(repository : AlbumRepository) : ViewModel() {
 
-
 }
